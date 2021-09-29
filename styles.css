@@ -16,6 +16,11 @@ body {
 .control-board {
 	display: flex;
 	color: #fff;
+	margin-right: 15px;
+}
+
+#range-board {
+	margin-right: 15px;
 }
 
 .container {

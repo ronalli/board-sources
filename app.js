@@ -1,10 +1,12 @@
 const board = document.querySelector('#board');
+const count = document.querySelector('#count')
 let maxCount = 0;
 let rangeInput = document.querySelector('#range-board');
 
 rangeInput.addEventListener('change', (e) => {
 	board.innerHTML = ''
 	maxCount = rangeInput.value;
+	count.innerHTML = maxCount;
 	console.log(rangeInput.value);
 	for (let i = 0; i < maxCount; i++) {
 		let square = document.createElement('div');
@@ -29,11 +31,6 @@ rangeInput.addEventListener('change', (e) => {
 
 	}
 })
-
-
-
-
-
 
 
 function randomColor() {
